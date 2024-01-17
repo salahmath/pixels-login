@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "build"
+  command = "npm run build"  # Commande pour construire le client
+  publish = "client/build"   # Dossier de construction du client
 
 [[redirects]]
   from = "/*"
