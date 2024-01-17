@@ -1,4 +1,8 @@
-[[redirects]]
-from="/*"
-to = "/index.js
-status = 200
+[build]
+  command = "npm run build"  # Commande pour construire le client
+  publish = "client/build"  # Dossier de construction du client
+
+[[redirects]]  # Redirection pour traiter toutes les autres routes vers le serveur
+  from = "/*"
+  to = "/server/:splat"
+  status = 200
