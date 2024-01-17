@@ -2,7 +2,7 @@
   command = "npm run build"  # Commande pour construire le client
   publish = "client/build"  # Dossier de construction du client
 
-[[redirects]]  # Redirection pour traiter toutes les autres routes vers le serveur
+[[redirects]]
   from = "/*"
-  to = "/server/:splat"
+  to = "/index.js"  # Redirection vers le fichier index.html du client
   status = 200
